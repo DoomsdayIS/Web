@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link href="/stylesheets/outline-safe.css" rel="stylesheet">
+    <link href="/stylesheets/mystyles.css" rel="stylesheet">
     <meta name="keywords" content="портфолио, резюме, программирование">
     <meta name="description" content="портфолио-резюме студента М33101 Шеремета Ивана Андреевича с галереей фотографий">
     <title>Резюме</title>
@@ -13,11 +13,13 @@
         Шеремет Иван Андреевич М33101
     </h1>
     <nav>
-        Здесь будут ссылки на разделы внутри сайта
+        <a href="#resume">Резюме</a>
+        <a href="#my creativity">Мое творчество</a>
+        <a href="#my contacts">Мои контакты</a>
     </nav>
 </header>
 <main>
-    <h2>
+    <h2 id="resume">
         Резюме
     </h2>
     <section>
@@ -51,7 +53,7 @@
             </li>
             <li>
                 <h4>Национальный Исследовательский Университет ИТМО</h4>
-                <p>Дополнительный трек "Методы анализа данных", <time datetime="2023-06-01"> год выпуска 2023</time></p></p>
+                <p>Дополнительный трек "Методы анализа данных", <time datetime="2023-06-01"> год выпуска 2023</time></p>
             </li>
         </ul>
     </section>
@@ -66,7 +68,7 @@
         <h3>Навыки</h3>
         <ul>
             <li>
-                Технические ( в порядке от наиболее сильных к более слабым )
+                Технические ( в порядке от сильных к слабым )
                 <ol>
                     <li>Python</li>
                     <li>C++</li>
@@ -76,7 +78,7 @@
                 </ol>
             </li>
             <li>
-                Гибкие ( в порядке от наиболее сильных к более слабым )
+                Гибкие ( в порядке от сильных к слабым )
                 <ol>
                     <li>Критичность</li>
                     <li>Кооперативность</li>
@@ -85,41 +87,41 @@
             </li>
         </ul>
     </section>
-    <h2>Мое творчество</h2>
+    <h2 id="my creativity">Мое творчество</h2>
     <article>
         <h3>Пример моего кода на языке С#</h3>
         <pre><code>
-                public class Student
-                {
-                    private static int _lastId = 1;
-                    public Student(string name)
+                    public class Student
                     {
-                        Name = name;
-                        Id = _lastId;
-                        _lastId++;
-                    }
+                        private static int _lastId = 1;
+                        public Student(string name)
+                        {
+                            Name = name;
+                            Id = _lastId;
+                            _lastId++;
+                        }
 
-                    public string Name { get; private set; }
-                    public int Id { get; private set; }
-                    public Group Group { get; private set; }
+                        public string Name { get; private set; }
+                        public int Id { get; private set; }
+                        public Group Group { get; private set; }
 
-                    public void ChangeGroup(Group group)
-                    {
-                        Group = group;
+                        public void ChangeGroup(Group group)
+                        {
+                            Group = group;
+                        }
                     }
-                }
-            </code></pre>
+                </code></pre>
     </article>
     <aside>
         <h3>ASCII art</h3>
         <pre>
-                   ,##.                   ,==.
-                 ,#    #.                 \ o ',
-                #        #     _     _     \    \
-                #        #    (_)   (_)    /    ;
-                 `#    #'                 /   .'
-                   `##'                   "=="
-            </pre>
+                       ,##.                   ,==.
+                     ,#    #.                 \ o ',
+                    #        #     _     _     \    \
+                    #        #    (_)   (_)    /    ;
+                     `#    #'                 /   .'
+                       `##'                   "=="
+                </pre>
     </aside>
 </main>
 <footer>
@@ -128,8 +130,9 @@
             <ins>кто не совмещает несколько <b>заданий</b> в одном предложении </ins></p>
         <cite><strong>Теодор Рузвельт</strong></cite>
     </blockquote>
-    <nav>
-
+    <nav id="my contacts">
+        <a href="https://t.me/dsione">Telegram</a>
+        <a href="https://github.com/DoomsdayIS">Github</a>
     </nav>
 </footer>
 </body>
