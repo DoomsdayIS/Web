@@ -8,131 +8,98 @@
     <title>Резюме</title>
 </head>
 <body>
-<header>
+<header class = "header">
     <h1>
         Шеремет Иван Андреевич М33101
     </h1>
-    <nav>
-        <a href="#resume">Резюме</a>
-        <a href="#my creativity">Мое творчество</a>
-        <a href="#my contacts">Мои контакты</a>
+    <nav class="navigation-block navigation-block__top_light">
+        <a class="navigation-block__link navigation-block__link__light" href="#resume">Резюме</a>
+        <a class="navigation-block__link navigation-block__link__light" href="my-art.html">Мое творчество</a>
+        <a class="navigation-block__link navigation-block__link__light" href="images.html">Картинки</a>
+        <a class="navigation-block__link navigation-block__link__light" href="#my contacts">Мои контакты</a>
     </nav>
 </header>
 <main>
-    <h2 id="resume">
-        Резюме
-    </h2>
-    <section>
-        <h3>Характеристика</h3>
-        <p>
-            Получаю образование по направлению информационные системы и технологии, любимые предметы за время
-            обучения в вузе: "Линейная алгебра" и "Дискретная математика". В качестве
-            дисциплины по выбору изучаю "Технологии информационного поиска", также получаю второй диплом по
-            специализации "Методы анализа данных". <br> Являюсь студентом "<span>Свободного университета</span>" по направлению
-            "Линейная алгебра". Проходил курсы от <span>Computer Science Center</span> по математическому анализу. Участвовал
-            в хакатонах и кейс чемпионатах.
-        </p>
-    </section>
-    <section>
-        <h3>Опыт работы</h3>
-        <p><time datetime="2021-05-18">05/2021</time> - <time datetime="2022-03-14">03/2022</time> <br>
-            Акционерное общество "<span>Тинькофф Банк"</span>, Москва <br>
-            Работал бизнес-аналитиком в отделе развития карточных продуктов.
-            Во время работы выдвигал гипотезы о потребностях бизнеса, считал экономику карточных продуктов,
-            обрабатывал данные и исходя из них делал выводы для бизнеса, прописывал технические спецификации
-            для команд разработки, проводил интеграционные тестирования и организовывал вывод изменения в продакшен.
-            Основные инструменты работы - Apache Zeppelin/Jira. Основные языки - SQL, Python. Основные навыки,
-            которые использовал в работе - мат.статистика(построение и понимание графиков, обработка данных).</p>
-    </section>
-    <section>
-        <h3>Образование</h3>
-        <ul>
-            <li>
-                <h4>Национальный Исследовательский Университет ИТМО</h4>
-                <p>Факультет информационных технологий и программирования, <time datetime="2024-06-01"> год выпуска 2024</time></p>
-            </li>
-            <li>
-                <h4>Национальный Исследовательский Университет ИТМО</h4>
-                <p>Дополнительный трек "Методы анализа данных", <time datetime="2023-06-01"> год выпуска 2023</time></p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h3>Достижения</h3>
-        <ul>
-            <li>11 класс ВСОЩ по информатике призера регионального этапа</li>
-            <li>Tinkoff case 2021, 2 место</li>
-        </ul>
-    </section>
-    <section>
-        <h3>Навыки</h3>
-        <ul>
-            <li>
-                Технические ( в порядке от сильных к слабым )
-                <ol>
-                    <li>Python</li>
-                    <li>C++</li>
-                    <li>Git</li>
-                    <li>R</li>
-                    <li>Bash</li>
-                </ol>
-            </li>
-            <li>
-                Гибкие ( в порядке от сильных к слабым )
-                <ol>
-                    <li>Критичность</li>
-                    <li>Кооперативность</li>
-                    <li>Ненасильственное общение</li>
-                </ol>
-            </li>
-        </ul>
-    </section>
-    <h2 id="my creativity">Мое творчество</h2>
-    <article>
-        <h3>Пример моего кода на языке С#</h3>
-        <pre><code>
-                    public class Student
-                    {
-                        private static int _lastId = 1;
-                        public Student(string name)
-                        {
-                            Name = name;
-                            Id = _lastId;
-                            _lastId++;
-                        }
-
-                        public string Name { get; private set; }
-                        public int Id { get; private set; }
-                        public Group Group { get; private set; }
-
-                        public void ChangeGroup(Group group)
-                        {
-                            Group = group;
-                        }
-                    }
-                </code></pre>
+    <article class="resume resume__center_light">
+        <h2 id="resume">
+            Резюме
+        </h2>
+        <section class="resume__chapter resume__chapter__light">
+            <h3>Характеристика</h3>
+            <p>
+                Получаю образование по направлению информационные системы и технологии, любимые предметы за время
+                обучения в вузе: "Линейная алгебра" и "Дискретная математика". В качестве
+                дисциплины по выбору изучаю "Технологии информационного поиска", также получаю второй диплом по
+                специализации "Методы анализа данных". <br> Являюсь студентом "<span>Свободного университета</span>" по направлению
+                "Линейная алгебра". Проходил курсы от <span>Computer Science Center</span> по математическому анализу. Участвовал
+                в хакатонах и кейс чемпионатах.
+            </p>
+        </section>
+        <section class="resume__chapter resume__chapter__light">
+            <h3>Опыт работы</h3>
+            <p><time datetime="2021-05-18">05/2021</time> - <time datetime="2022-03-14">03/2022</time> <br>
+                Акционерное общество "<span>Тинькофф Банк"</span>, Москва <br>
+                Работал бизнес-аналитиком в отделе развития карточных продуктов.
+                Во время работы выдвигал гипотезы о потребностях бизнеса, считал экономику карточных продуктов,
+                обрабатывал данные и исходя из них делал выводы для бизнеса, прописывал технические спецификации
+                для команд разработки, проводил интеграционные тестирования и организовывал вывод изменения в продакшен.
+                Основные инструменты работы - Apache Zeppelin/Jira. Основные языки - SQL, Python. Основные навыки,
+                которые использовал в работе - мат.статистика(построение и понимание графиков, обработка данных).</p>
+        </section>
+        <section class="resume__chapter resume__chapter__light">
+            <h3>Образование</h3>
+            <ul>
+                <li>
+                    <h4>Национальный Исследовательский Университет ИТМО</h4>
+                    <p>Факультет информационных технологий и программирования, <time datetime="2024-06-01"> год выпуска 2024</time></p>
+                </li>
+                <li>
+                    <h4>Национальный Исследовательский Университет ИТМО</h4>
+                    <p>Дополнительный трек "Методы анализа данных", <time datetime="2023-06-01"> год выпуска 2023</time></p>
+                </li>
+            </ul>
+        </section>
+        <section class="resume__chapter resume__chapter__light">
+            <h3>Достижения</h3>
+            <ul>
+                <li>11 класс ВСОЩ по информатике призера регионального этапа</li>
+                <li>Tinkoff case 2021, 2 место</li>
+            </ul>
+        </section>
+        <section class="resume__chapter resume__chapter__light">
+            <h3>Навыки</h3>
+            <ul>
+                <li>
+                    Технические ( в порядке от сильных к слабым )
+                    <ol>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Git</li>
+                        <li>R</li>
+                        <li>Bash</li>
+                    </ol>
+                </li>
+                <li>
+                    Гибкие ( в порядке от сильных к слабым )
+                    <ol>
+                        <li>Критичность</li>
+                        <li>Кооперативность</li>
+                        <li>Ненасильственное общение</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
     </article>
-    <aside>
-        <h3>ASCII art</h3>
-        <pre>
-                       ,##.                   ,==.
-                     ,#    #.                 \ o ',
-                    #        #     _     _     \    \
-                    #        #    (_)   (_)    /    ;
-                     `#    #'                 /   .'
-                       `##'                   "=="
-                </pre>
-    </aside>
 </main>
-<footer>
+<footer class="footer">
     <blockquote>
         <p>Никогда не ошибается тот, <del>кто не делает лабы по <i>вебу</i></del>
             <ins>кто не совмещает несколько <b>заданий</b> в одном предложении </ins></p>
         <cite><strong>Теодор Рузвельт</strong></cite>
     </blockquote>
-    <nav id="my contacts">
-        <a href="https://t.me/dsione">Telegram</a>
-        <a href="https://github.com/DoomsdayIS">Github</a>
+    <nav id="my contacts" class="navigation-block navigation-block__bottom_light">
+        <a class="navigation-block__link navigation-block__link__light" href="https://t.me/dsione">Telegram</a>
+        <a class="navigation-block__link navigation-block__link__light" href="https://github.com/DoomsdayIS">Github</a>
     </nav>
 </footer>
 </body>

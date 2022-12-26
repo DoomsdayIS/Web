@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="/stylesheets/mystyles.css" rel="stylesheet">
+    <meta name="keywords" content="творчество, код">
+    <meta name="description" content="Мои избранное творчество">
+    <title>Мое творчество</title>
+</head>
+<body>
+    <header class="header">
+        <h1>
+            Мое творчество?
+        </h1>
+        <nav class="navigation-block navigation-block__top_light">
+            <a class="navigation-block__link navigation-block__link__light" href="index.html">Резюме</a>
+            <a class="navigation-block__link navigation-block__link__light" href="images.html">Картинки</a>
+            <a class="navigation-block__link navigation-block__link__light" href="#my contacts">Мои контакты</a>
+        </nav>
+    </header>
+    <main>
+        <div class="my-arts my-arts__centered">
+            <h2 id="my-art">Мое творчество</h2>
+            <section>
+                <h3>Пример моего кода на языке С#</h3>
+                <pre><code>
+public class Student
+{
+    private static int _lastId = 1;
+    public Student(string name)
+    {
+        Name = name;
+        Id = _lastId;
+        _lastId++;
+    }
+
+    public string Name { get; private set; }
+    public int Id { get; private set; }
+    public Group Group { get; private set; }
+
+    public void ChangeGroup(Group group)
+    {
+        Group = group;
+    }
+}
+                    </code></pre>
+            </section>
+            <aside>
+                <h3>ASCII art</h3>
+                <pre>
+                           ,##.                   ,==.
+                         ,#    #.                 \ o ',
+                        #        #     _     _     \    \
+                        #        #    (_)   (_)    /    ;
+                         `#    #'                 /   .'
+                           `##'                   "=="
+                    </pre>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <blockquote>
+            <p>Никогда не ошибается тот, <del>кто не делает лабы по <i>вебу</i></del>
+                <ins>кто не совмещает несколько <b>заданий</b> в одном предложении </ins></p>
+            <cite><strong>Теодор Рузвельт</strong></cite>
+        </blockquote>
+        <nav id="my contacts" class="navigation-block navigation-block__bottom_light">
+            <a class="navigation-block__link navigation-block__link__light" href="https://t.me/dsione">Telegram</a>
+            <a class="navigation-block__link navigation-block__link__light" href="https://github.com/DoomsdayIS">Github</a>
+        </nav>
+    </footer>
+</body>
+</html>
