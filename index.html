@@ -6,6 +6,8 @@
     <meta name="keywords" content="портфолио, резюме, программирование">
     <meta name="description" content="портфолио-резюме студента М33101 Шеремета Ивана Андреевича с галереей фотографий">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="scripts/loadTime.js"></script>
+    <script defer src="scripts/documentLocation.js"></script>
     <title>Резюме</title>
 </head>
 <body>
@@ -14,12 +16,11 @@
         Шеремет Иван Андреевич М33101
     </h1>
     <nav class="navigation-block navigation-block__top_light">
-        <a class="navigation-block__link navigation-block__link__light" href="#resume">Резюме</a>
+        <a class="navigation-block__link navigation-block__link__light" id="current" href="#resume">Резюме</a>
         <a class="navigation-block__link navigation-block__link__light" href="my-art.html">Мое творчество</a>
         <a class="navigation-block__link navigation-block__link__light" href="images.html">Картинки</a>
         <a class="navigation-block__link navigation-block__link__light" href="table.html">Таблица</a>
         <a class="navigation-block__link navigation-block__link__light" href="#my contacts">Мои контакты</a>
-
     </nav>
 </header>
 <main>
@@ -95,6 +96,7 @@
     </article>
 </main>
 <footer class="footer">
+    <div id="page-load"></div>
     <blockquote>
         <p>Никогда не ошибается тот, <del>кто не делает лабы по <i>вебу</i></del>
             <ins>кто не совмещает несколько <b>заданий</b> в одном предложении </ins></p>

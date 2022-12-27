@@ -7,6 +7,7 @@
   <meta name="keywords" content="таблица, grid, лаба">
   <meta name="description" content="пункт 3 лабы 3">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="scripts/loadTime.js"></script>
   <title>Таблица</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
   </h1>
   <nav class="navigation-block navigation-block__top_light">
     <a class="navigation-block__link navigation-block__link__light" href="index.html">Резюме</a>
-    <a class="navigation-block__link navigation-block__link__light" href="my-art.html">Творчество</a>
+    <a class="navigation-block__link navigation-block__link__light" id="current" href="my-art.html">Творчество</a>
     <a class="navigation-block__link navigation-block__link__light" href="images.html">Картинки</a>
     <a class="navigation-block__link navigation-block__link__light" href="#my contacts">Мои контакты</a>
   </nav>
@@ -140,6 +141,7 @@
   </table>
 </main>
 <footer class="footer">
+  <div id="page-load"></div>
   <blockquote>
     <p>Никогда не ошибается тот, <del>кто не делает лабы по <i>вебу</i></del>
       <ins>кто не совмещает несколько <b>заданий</b> в одном предложении </ins></p>
