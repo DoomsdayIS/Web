@@ -113,6 +113,10 @@ h3 {
     margin: 15px auto;
 }
 
+.art_place_holder {
+    display: none;
+}
+
 #my-art {
     padding: 5px;
     margin: auto;
@@ -161,4 +165,118 @@ blockquote {
     border-radius: 25px;
     background-color: #485D7A;
     filter: drop-shadow(50px 50px 20px #485D7A);
+}
+
+.grid_table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 2vw;
+}
+#grid > div {
+    font-size: 5vw;
+    padding: .5em;
+    background: gold;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .resume {
+        width: 100%;
+    }
+    .images_gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images_gallery__image {
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+        filter: drop-shadow(10px 10px 10px #485D7A);
+    }
+
+    blockquote {
+        display: none;
+    }
+
+    .navigation-block {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        position: absolute;
+        top: 20px;
+        left: 45px;
+        font-size: 125%;
+    }
+
+    .my-arts {
+        display: none;
+    }
+
+    .art_place_holder {
+        width: 250px;
+        margin: auto;
+        height: auto;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 1280px) {
+    .resume {
+        width: 80%;
+    }
+    .images_gallery {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .images_gallery__image {
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+        filter: drop-shadow(10px 10px 10px #485D7A);
+    }
+
+    blockquote {
+        display: none;
+    }
+
+    .navigation-block {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation-block__bottom_light {
+        font-size: 150%;
+    }
+
+    .navigation-block__top_light {
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 175%;
+    }
+
+    .my-arts__centered {
+        margin: 0;
+    }
+
+    .my-arts {
+        width: auto;
+    }
+
 }
