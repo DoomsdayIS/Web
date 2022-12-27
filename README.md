@@ -34,4 +34,6 @@ footer
 
 Мой макет: 
 
+https://www.figma.com/file/nS6LMYvdUvaIMRz08oUVHU/Untitled?node-id=0%3A1&t=YxDkAOS3xbDvx0Oh-1
+
 ![alt text](https://github.com/DoomsdayIS/Web/blob/lab1/maket.png)
