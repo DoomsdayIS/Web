@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "my web project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoomsdayIS/Web.git"
+  },
+  "author": "Ivan Sheremet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoomsdayIS/Web/issues"
+  },
+  "homepage": "https://github.com/DoomsdayIS/Web#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "embla-carousel": "^8.0.0-rc12",
+    "flexslider": "^2.7.2",
+    "izitoast": "^1.4.0",
+    "jcslider": "^1.2.7",
+    "jquery": "^3.7.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "type": "module"
+}

@@ -3,109 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <link href="/stylesheets/mystyles.css" rel="stylesheet">
-    <meta name="keywords" content="портфолио, резюме, программирование">
-    <meta name="description" content="портфолио-резюме студента М33101 Шеремета Ивана Андреевича с галереей фотографий">
+    <meta name="keywords" content="искуссово, галерея, картины">
+    <meta name="description" content="страница арт-галереи">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="scripts/loadTime.js"></script>
-    <script defer src="scripts/documentLocation.js"></script>
-    <title>Резюме</title>
+    <title>Art Gallery "The Dream"</title>
 </head>
 <body>
-<header class = "header">
-    <h1>
-        Шеремет Иван Андреевич М33101
-    </h1>
-    <nav class="navigation-block navigation-block__top_light">
-        <a class="navigation-block__link navigation-block__link__light" id="current" href="#resume">Резюме</a>
-        <a class="navigation-block__link navigation-block__link__light" href="my-art.html">Мое творчество</a>
-        <a class="navigation-block__link navigation-block__link__light" href="images.html">Картинки</a>
-        <a class="navigation-block__link navigation-block__link__light" href="table.html">Таблица</a>
-        <a class="navigation-block__link navigation-block__link__light" href="#my contacts">Мои контакты</a>
-    </nav>
+<header class="header">
+    <a href="#">
+        <h1 class="site-name">
+            Art Gallery "The Dream"
+        </h1>
+    </a>
 </header>
+
+<hr>
+
+<nav class="navigate">
+    <ul>
+        <a href="#" class="current-page">
+            <li>About us</li>
+        </a>
+        <a href="pictures.html">
+            <li>Pictures</li>
+        </a>
+        <a href="photos.html">
+            <li>Photos</li>
+        </a>
+        <a href="wish_list.html">
+            <li>Wish List</li>
+        </a>
+        <a href="api-example.html">
+            <li>API</li>
+        </a>
+    </ul>
+</nav>
+
+<hr>
+
 <main>
-    <article class="resume resume__center_light">
-        <h2 id="resume">
-            Резюме
-        </h2>
-        <section class="resume__chapter resume__chapter__light">
-            <h3>Характеристика</h3>
-            <p>
-                Получаю образование по направлению информационные системы и технологии, любимые предметы за время
-                обучения в вузе: "Линейная алгебра" и "Дискретная математика". В качестве
-                дисциплины по выбору изучаю "Технологии информационного поиска", также получаю второй диплом по
-                специализации "Методы анализа данных". <br> Являюсь студентом "<span>Свободного университета</span>" по направлению
-                "Линейная алгебра". Проходил курсы от <span>Computer Science Center</span> по математическому анализу. Участвовал
-                в хакатонах и кейс чемпионатах.
-            </p>
-        </section>
-        <section class="resume__chapter resume__chapter__light">
-            <h3>Опыт работы</h3>
-            <p><time datetime="2021-05-18">05/2021</time> - <time datetime="2022-03-14">03/2022</time> <br>
-                Акционерное общество "<span>Тинькофф Банк"</span>, Москва <br>
-                Работал бизнес-аналитиком в отделе развития карточных продуктов.
-                Во время работы выдвигал гипотезы о потребностях бизнеса, считал экономику карточных продуктов,
-                обрабатывал данные и исходя из них делал выводы для бизнеса, прописывал технические спецификации
-                для команд разработки, проводил интеграционные тестирования и организовывал вывод изменения в продакшен.
-                Основные инструменты работы - Apache Zeppelin/Jira. Основные языки - SQL, Python. Основные навыки,
-                которые использовал в работе - мат.статистика(построение и понимание графиков, обработка данных).</p>
-        </section>
-        <section class="resume__chapter resume__chapter__light">
-            <h3>Образование</h3>
-            <ul>
-                <li>
-                    <h4>Национальный Исследовательский Университет ИТМО</h4>
-                    <p>Факультет информационных технологий и программирования, <time datetime="2024-06-01"> год выпуска 2024</time></p>
-                </li>
-                <li>
-                    <h4>Национальный Исследовательский Университет ИТМО</h4>
-                    <p>Дополнительный трек "Методы анализа данных", <time datetime="2023-06-01"> год выпуска 2023</time></p>
-                </li>
-            </ul>
-        </section>
-        <section class="resume__chapter resume__chapter__light">
-            <h3>Достижения</h3>
-            <ul>
-                <li>11 класс ВСОЩ по информатике призера регионального этапа</li>
-                <li>Tinkoff case 2021, 2 место</li>
-            </ul>
-        </section>
-        <section class="resume__chapter resume__chapter__light">
-            <h3>Навыки</h3>
-            <ul>
-                <li>
-                    Технические ( в порядке от сильных к слабым )
-                    <ol>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>Git</li>
-                        <li>R</li>
-                        <li>Bash</li>
-                    </ol>
-                </li>
-                <li>
-                    Гибкие ( в порядке от сильных к слабым )
-                    <ol>
-                        <li>Критичность</li>
-                        <li>Кооперативность</li>
-                        <li>Ненасильственное общение</li>
-                    </ol>
-                </li>
-            </ul>
-        </section>
-    </article>
+    <div class="full-description">
+        <h3>Что такое "The Dream"?</h3>
+        <p> Арт галерея "The Dream" предлагает вам эксклюзивные цены на оригинальные произведения искусства начинающих
+            известных художников со всего мира с бесплатной доставкой по всему миру в течение 24-48 часов к вашему порогу.
+            Наслаждайтесь нашей подборкой оригинальных произведений искусства и высококачественных принтов,
+            которые станут идеальным подарком или стильно украсят ваши стены!
+        </p>
+        <h3>Почему у нас?</h3>
+        <p>"The Dream" - лучший магазин, где можно найти оригинальные произведения искусства современных художников
+            и художественных галерей со всего мира! Вы можете найти коллекцию подходящего для вас стиля,
+            независимо от вашего бюджета, различных размеров и цен. Представлены все виды искусства,
+            как в реальной жизни, в музее или художественной студии.
+            Вы можете просмотреть красивый стильный портретный портрет или рисунок, черно-белую фотографию, абстрактную картину
+            или любую другую работу по своему вкусу.</p>
+        <h3>Плюсы онлайна</h3>
+        <p>В то время как традиционные художественные галереи ограничены своим физическим пространством,
+            таких ограничений нет в виртуальной галерее, где пространство «практически» неограничено,
+            и поэтому это количество произведений, которые вы можете просматривать!
+            Еще одно преимущество - онлайн-площадки всегда открыты! В отличие от традиционных галерей, принимающих публику в определенные часы работы,
+            "The Dream" открыт 24 часа в сутки, 7 дней в неделю, поэтому вы можете приходить и изучать искусство в любое время дня и ночи.
+            Вам просто нужно выбрать произведение искусства с нашего сайта, а мы позаботимся обо всем остальном.
+            Это так просто! Мы предлагаем бесплатную доставку для всех заказов, и у вас есть 14 дней,
+            чтобы вернуть свои работы, чтобы получить полный возврат средств, если вы не полностью удовлетворены.
+            "The Dream" стремится дать возможность коллекционерам находить и покупать произведения искусства любых
+            художников по всему миру, безопасно и надежно. Каждая продажа сопровождается сертификатом
+            подлинности с возможностью онлайн-отслеживания.</p>
+        <h3>Безопасность и надежность</h3>
+        <p>С тех пор, как Интернет стал доступным для всех, онлайн-галереи и рынки покупателей приобрели огромную популярность.
+            Продажа и покупка произведений искусства в Интернете теперь является лучшим способом сбора: покупатели и
+            продавцы произведений искусства могут приобретать современное искусство напрямую со всего мира, вы также
+            можете попросить нас договориться о покупке произведений искусства в Интернете у любого крупного художника
+            или продавца. "The Dream" гарантирует покупателям подлинность работ и позволяет
+            безопасно покупать произведения искусства у любого художника в мире.</p>
+        <h3>Отзывы о нас</h3>
+    </div>
+    <div class="download-preloader">
+        <h3>Идет загрузка комментариев ... </h3>
+        <img src="images/giphy.gif">
+    </div>
+    <div class="comment-section">
+    </div>
+    <h3>Наше адрес:</h3>
+    <div class="contacts-map">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeeeec6e6064bfc2951e2508e98e29a4b8019e6f1add0886019dd7f1552d56f6a&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
 </main>
 <footer class="footer">
-    <div id="page-load"></div>
-    <blockquote>
-        <p>Никогда не ошибается тот, <del>кто не делает лабы по <i>вебу</i></del>
-            <ins>кто не совмещает несколько <b>заданий</b> в одном предложении </ins></p>
-        <cite><strong>Теодор Рузвельт</strong></cite>
-    </blockquote>
-    <nav id="my contacts" class="navigation-block navigation-block__bottom_light">
-        <a class="navigation-block__link navigation-block__link__light" href="https://t.me/dsione">Telegram</a>
-        <a class="navigation-block__link navigation-block__link__light" href="https://github.com/DoomsdayIS">Github</a>
-    </nav>
+    <p>This website was created by Ivan Sheremet</p>
+    <ul>
+        <a href="https://web.telegram.org/k/">
+            <li>Telegram</li>
+        </a>
+        <a href="https://vk.com/dsione">
+            <li>Vk</li>
+        </a>
+        <a href="https://github.com/DoomsdayIS">
+            <li>Github</li>
+        </a>
+        <a href="https://twitter.com">
+            <li>Twitter</li>
+        </a>
+    </ul>
+    <p id="loadTime"></p>
 </footer>
+<script src="scripts/comments.js"></script>
 </body>
 </html>

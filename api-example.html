@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+    <link rel="stylesheet" href="node_modules/izitoast/dist/css/iziToast.min.css">
+    <link href="/stylesheets/mystyles.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="node_modules/jcslider/jquery.jcslider.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<header class="header">
+    <a href="#">
+        <h1 class="site-name">
+            Art Gallery "The Dream"
+        </h1>
+    </a>
+</header>
+
+<hr>
+
+<nav class="navigate">
+    <ul>
+        <a href="index.html">
+            <li>About us</li>
+        </a>
+        <a href="pictures.html">
+            <li>Pictures</li>
+        </a>
+        <a href="photos.html">
+            <li>Photos</li>
+        </a>
+        <a href="wish_list.html">
+            <li>Wish List</li>
+        </a>
+        <a href="#" class="current-page">
+            <li>API</li>
+        </a>
+    </ul>
+</nav>
+
+<hr>
+
+<script src="node_modules/izitoast/dist/js/iziToast.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    iziToast.show({
+        title: 'Welcome to the jc-slider demo page',
+        position: "center",
+    });
+</script>
+<ul class="jc-slider">
+    <li class="jc-animation">
+        <img src="images/photo3.jpg">
+    </li>
+    <li class="jc-animation">
+        <img src="images/photo2.jpg">
+    </li>
+    <li class="jc-animation">
+        <img src="images/photo1.jpg">
+    </li>
+    <li class="jc-animation">
+        <img src="images/photo4.jpg">
+    </li>
+    <li class="jc-animation">
+        <img src="images/photo5.jpg">
+    </li>
+    <li class="jc-animation">
+        <img src="images/pic6.jpg">
+    </li>
+    <li class="jc-animation">
+        <img src="images/pic4.jpg">
+    </li>
+    <li class="jc-animation">
+        <img src="images/pic2.jpg">
+    </li>
+</ul>
+<script src="scripts/slider_turn_on.js"></script>
+<footer class="footer">
+    <p>This website was created by Ivan Sheremet</p>
+    <ul>
+        <a href="https://web.telegram.org/k/">
+            <li>Telegram</li>
+        </a>
+        <a href="https://vk.com/dsione">
+            <li>Vk</li>
+        </a>
+        <a href="https://github.com/DoomsdayIS">
+            <li>Github</li>
+        </a>
+        <a href="https://twitter.com">
+            <li>Twitter</li>
+        </a>
+    </ul>
+    <p id="loadTime"></p>
+</footer>
+</body>
+</html>
